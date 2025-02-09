@@ -1,0 +1,196 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #F4C1B9;
+}
+.esquinas {
+  position: absolute;
+  width: 480px; 
+  height: auto;
+}
+.imgIz {
+  top: 0;
+  left: 0;
+}
+.imgDe {
+  top: 0;
+  right: 0;
+  transform: scaleX(-1);
+}
+.nombre {
+  text-align: center;
+  flex-grow: 1; 
+}
+header {
+  background-color: #5C768D;
+  color: #f2f2f2;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  font-style: italic;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.tam{
+  font-size: 55px;
+  font-weight: bold;
+  text-align: center;
+}
+/* Menú de navegación */
+nav {
+  background-color: #C48D7B;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+}
+nav ul {
+  list-style: none;  /* Quitar los puntos de la lista */
+  padding: 0;
+  margin: 0;
+  display: flex;  /* Hace que los <li> estén en línea horizontal */
+  justify-content: center;
+}
+nav ul li {
+  text-align: center; /* Centra el texto dentro de cada <li> */
+  flex: 1; /* Hace que cada <li> ocupe el mismo espacio dentro del nav */
+}
+nav ul li a {
+    display: block; /* Hace que los enlaces ocupen toda el área del <li> */
+    text-decoration: none;
+    color: #f2f2f2;
+    padding: 15px 20px; /* Ajusta el espacio dentro de cada enlace */
+    width: 100%; /* Asegura que ocupe todo el <li> */
+    height: 100%; /* Ajusta la altura */
+    transition: 0.3s;
+    font-size: 20px;
+}
+nav ul li:hover {
+  background-color: #f2f2f2; /* Cambia toda el área al pasar el mouse */
+}
+nav ul li:hover a {
+  color: #C48D7B; /* Cambia el color del texto también */
+}
+.img{
+  height: 409px; /* Ajusta la altura */
+  object-fit: contain; /* Evita que se corte la imagen */
+}
+.subtitulo{
+  font-size: 25px;
+  font-weight: bold;
+}
+/* Sección de información */
+.info {
+  padding: 35px;
+  font-size: 19px;
+  text-align: center;
+}
+/* Contenedor principal: usa flexbox para organizar en filas */
+.container {
+  display: flex;
+  align-items: center; /* Centra verticalmente */
+  gap: 110px; /* Espacio entre los elementos */
+  padding: 20px;
+}
+
+/* Contenedor del texto (ocupa 50% del ancho) */
+.text-container {
+  width: auto;
+  text-align: left; /* Asegura que el texto se alinee a la izquierda */
+}
+.style{
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+}
+.styleC{
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-size: 18px;;
+}
+.styleB{
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 22px;
+}
+.ah{
+  font-size: 17px;
+}
+#InfoP{
+  margin-left: 165px;
+  top: 100px;
+  font-size: 25px;
+  font-weight: bold;
+}
+ #ContInfoP{
+  margin-left: 55px;
+  font-size: 20px;
+ }
+ #InfoF{
+  margin-left: 205px;
+  font-size: 25px;
+  font-weight: bold;
+ }
+ #ContInfoF{
+  margin-left: 40px;
+  font-size: 20px;
+ }
+.divhe {
+  display: flex; /* Acomoda los elementos en fila */
+  justify-content: center; /* Centra las tarjetas */
+  gap: 110px; /* Espacio entre ellas */
+  width: 100%; /* Asegura que ocupe todo el ancho disponible */
+  margin-top: 20px; /* Separa un poco de lo que esté arriba */
+}
+
+.polaroid {
+  width: 20%; /* Ajusta el tamaño de cada tarjeta */
+  min-width: 200px; /* Evita que sean demasiado pequeñas */
+  background-color: #f2f2f2;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  padding-bottom: 10px;
+  max-height: 535px;
+}
+
+.containerP {
+  text-align: center;
+  padding: 20px 20px;
+}
+
+img {
+  width: 100%; /* Hace que las imágenes ocupen el ancho de la tarjeta */
+  height: auto; /* Mantiene la proporción */
+}
+.imgs1{
+  width: 400px;
+  border-radius: 10%;
+}
+.imgs2{
+  width: 300px;
+  margin-left: 145px;
+  border-radius: 20%;
+}
+.custom-row {
+  display: flex;
+  gap: 5rem; /* Ajusta el valor según la separación que quieras */
+}
+.iconos {
+  display: flex; /* Hace que los iconos estén en fila */
+  justify-content: center; /* Centra los iconos horizontalmente */
+  gap: 4.4rem; /* Espaciado uniforme entre los iconos */
+}
+
+.iconos i {
+  font-size: 2.4rem; /* Agranda los iconos */
+  color: #5C768D; /* Puedes cambiar el color si lo deseas */
+}
+.carousel-inner img {
+  width: 100%; /* Ocupa todo el ancho del contenedor */
+  height: 409px; /* Altura fija para todas las imágenes */
+  object-fit: cover; /* Recorta la imagen manteniendo el aspecto */
+  border-radius: 5px; /* Opcional: bordes redondeados */
+}
